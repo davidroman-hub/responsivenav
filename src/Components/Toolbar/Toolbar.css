@@ -1,0 +1,59 @@
+.toolbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: purple;
+  height: 56px;
+}
+
+.toolbar_navigation{ /* el elemento padre*/
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;/* mover un poquitp donde dice logo*/
+}
+
+.toolbar_logo {
+  margin-left: 0.5rem;
+}
+
+.toolbar_logo a {
+  color:white;
+  text-decoration: none;
+  font-size: 1.5em;
+
+}
+
+.spacer{
+
+  /* el spacer solo lo utilizamos para separar el contenido de los div y mandar el contenido a la derecha y el logo dejarlo en la i
+  izquierda!! excelente truco*/
+
+  flex: 1;
+}
+
+.toolbar_navigation-item ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar_navigation-item li {
+  padding: 0 0.5rem;
+
+}
+
+
+.toolbar_navigation-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.toolbar_navigation-item a:hover,
+.toolbar_navigation-item a:active{
+
+  color: orange;
+
+}
