@@ -13,9 +13,9 @@
   align-items: center;
   padding: 0 1rem;/* mover un poquitp donde dice logo*/
 }
-
+/*espacio entre el botton y el logo*/
 .toolbar_logo {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 .toolbar_logo a {
@@ -56,4 +56,16 @@
 
   color: orange;
 
+}
+
+@media (max-width: 768px){ /* es solo para que se vea en modo movil usuarios*/
+  .toolbar_navigation-item{
+    display: none;
+  }
+}
+
+@media(min-width: 769px){
+  .toolbar_toggle-button{
+    display:none
+  }
 }
